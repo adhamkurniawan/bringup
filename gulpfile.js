@@ -3,7 +3,8 @@ var browserSync = require('browser-sync').create();
 
 gulp.task('serve', function() {
   browserSync.init({
-    server: "./app"
+    server: "./app",
+    open: false
   });
 
   gulp.watch("app/*.html").on("change", browserSync.reload);
