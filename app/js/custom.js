@@ -15,4 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 $(document).ready(function() {
+  $('#sidebar li').click(function() {
+    $(this).addClass('active').siblings('li').removeClass('active');
+  });
 });
